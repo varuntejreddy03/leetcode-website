@@ -1,0 +1,81 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px; /* Set a maximum width for larger screens */
+  margin: auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Heading Styles */
+h1 {
+  margin-top: 20px; /* Top margin for spacing */
+}
+
+/* Filter Form Styles */
+.filter-form {
+  margin-bottom: 30px; /* Add space below the form */
+}
+
+/* Table Styles */
+table {
+  border-radius: 10px; /* Rounded corners for the table */
+  overflow: hidden; /* Ensure borders are rounded */
+}
+
+th, td {
+  border: 1px solid #dee2e6; /* Border color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .filter-form {
+      flex-direction: column; /* Stack the filter form inputs vertically */
+  }
+
+  .form-control {
+      margin-bottom: 10px; /* Add space between stacked elements */
+  }
+}
+
+/* Button Styles */
+.btn-primary {
+  transition: transform 0.2s; /* Add scaling effect on hover */
+}
+
+.btn-primary:hover {
+  transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+/* Logo Styles */
+img {
+  transition: transform 0.2s; /* Smooth transition for logo hover */
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background-color: rgba(26, 188, 156, 0.1); /* Light teal highlight on hover */
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1abc9c; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a085; /* Darker on hover */
+}

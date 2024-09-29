@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - DSA Research Solutions</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #e8f0fe; /* Softer background for better readability */
+            font-family: 'Helvetica Neue', sans-serif;
+            color: #34495e; /* Dark gray for better contrast */
+        }
+
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        .container {
+            padding: 30px;
+            border-radius: 15px;
+            background-color: white;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.8s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        h1:hover {
+            color: #16a085;
+            transition: color 0.4s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #2980b9;
+            margin-top: 20px;
+            animation: slideInRight 1s ease-in-out;
+        }
+
+        @keyframes slideInRight {
+            from {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.8;
+        }
+
+        .btn-home {
+            background-color: #2980b9;
+            color: white;
+            border-radius: 25px;
+            margin-top: 30px;
+            padding: 10px 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.4s ease, transform 0.3s ease;
+        }
+
+        .btn-home:hover {
+            background-color: #1abc9c;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px 0;
+            background-color: #f1f1f1;
+            border-top: 1px solid #ddd;
+            color: #555;
+        }
+
+        footer:hover {
+            background-color: #2980b9;
+            color: white;
+            transition: all 0.4s ease;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">DSA Research Solutions</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About Me</a>
+                </li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>About Me</h1>
+
+        <h2>Welcome to My Website!</h2>
+        <p>
+            Hello! I'm Varun Tej, a passionate Computer Science student at <strong>Keshav Memorial College of Engineering</strong>. I have a keen interest in Data Structures and Algorithms (DSA), and I created this website to explore how practical applications of DSA can solve real-world research problems.
+        </p>
+
+        <h2>My Mission</h2>
+        <p>
+            My goal is to bridge the gap between theoretical knowledge and practical implementation. This website showcases various DSA techniques and their applicability in research scenarios, aiming to help users understand how these algorithms can be effectively utilized in solving complex problems.
+        </p>
+
+        <h2>Why DSA?</h2>
+        <p>
+            Data Structures and Algorithms are the backbone of efficient programming and software development. By mastering DSA, one can develop robust applications, optimize resource usage, and provide innovative solutions to pressing challenges in various fields.
+        </p>
+
+        <h2>Join Me on This Journey!</h2>
+        <p>
+            I invite you to explore the content on this website, engage with the community, and enhance your understanding of DSA. Together, we can unlock the potential of algorithms to drive research and innovation.
+        </p>
+
+        <a href="{{ url_for('index') }}" class="btn btn-home">Back to Home</a> <!-- Link to the homepage -->
+    </div>
+
+    <footer>
+        &copy; 2024 Varun Tej, Keshav Memorial College of Engineering | All Rights Reserved
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
